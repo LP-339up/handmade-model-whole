@@ -1,0 +1,126 @@
+/* CSS Document */
+
+a {
+	text-decoration: none;
+	color:#6c6c6c;
+}
+a:hover {
+ /* color:#DD0C46; */
+ text-decoration: none;
+}
+ul, li {
+	list-style-type:none;
+}
+body {
+	color:#6c6c6c;
+	font-size:.12rem;
+	line-height:.15rem;
+}
+html, body, h1, h2, h3, h4, h5,  h6, ul, ol, dl, li, dt, dd, p, blockquote,  pre, form, fieldset, table, th, td {
+	margin:0;
+	padding:0;
+}
+img{ border:none 0;}
+#ma0{ margin:0rem;}
+.ma0{ margin:0rem;}
+.ma10{ margin:.10rem;}
+.maL10{ margin-left:.10rem;}
+.maR10{ margin-right:.10rem;}
+.maT10{ margin-top:.10rem;}
+.maB10{ margin-bottom:.10rem;}
+.ma5{ margin:.05rem;}
+.maL5{ margin-left:.05rem;}
+.maR5{ margin-right:.05rem;}
+.maT5{ margin-top:.05rem;}
+.maB5{ margin-bottom:.05rem;}
+.ma15{ margin:.15rem;}
+.maL15{ margin-left:.15rem;}
+.maR15{ margin-right:.15rem;}
+.maT15{ margin-top:.15rem;}
+.maB15{ margin-bottom:.15rem;}
+.maB80{ margin-bottom:.80rem;}
+.paT35{ padding-top:.35rem;}
+.paB35{ padding-bottom:.35rem;}
+.pa0{ padding:0rem;}
+.pa10{ padding:.10rem;}
+.paL10{ padding-left:.10rem;}
+.paR10{ padding-right:.10rem;}
+.paT10{ padding-top:.10rem;}
+.paB10{ padding-bottom:.10rem;}
+.pa5{ padding:.05rem;}
+.paL5{ padding-left:.05rem;}
+.paR5{ padding-right:.05rem;}
+.paT5{ padding-top:.05rem;}
+.paB5{ padding-bottom:.05rem;}
+.fL{ float:left;}
+.fR{ float:right;}
+.overFlow{ overflow:hidden;zoom:1;}
+#bgnone{ background:none;}
+.bornone{ border: none 0;}
+.clF00{ color: #F00;}
+.clblack{ color:#000;}
+.borbcc{ border-bottom:#ccc .01rem solid;}
+.clbFw{ color:#000; font-weight:bold;}
+.cl999{ color:#999;}
+
+.clearfix:after{content:'.'; display:block; visibility:hidden; clear:both; height:0;}
+.clearfix{ zoom:1;}
+.pic2 img
+{
+	width:9.79rem;
+	height:2.05rem;
+}
+
+
+.point.yincang{
+ 	 display: block;
+ 	 position: absolute;
+ 	 left: 50%;
+ 	 top: 50%;
+  }
+.point {
+	display: none;
+ }
+ 
+ .point .pop {
+ 	width: 500px;
+ 	height: 200px;
+ 	position: absolute;
+ 	left: -250px;
+ 	top: -100px;
+ 	border: 1px solid red;
+ 	color: dimgrey;
+	background-color: white;
+ }
+
+ .padding-10 {
+ 	padding: 20px;
+ }
+
+ .gbtb {
+ 	position: absolute;
+ 	top: 10px;
+ 	right: 10px;
+ }
+
+ .point .pop .top-title,
+ .mid-content {
+ 	border-bottom: 1px dotted #ccc;
+ }
+
+ .point .pop .bottom-btn {
+ 	content: '';
+ 	display: block;
+ 	clear: both;
+
+ }
+
+ .point .pop .bottom-btn .queren {
+ 	float: right;
+ 	border: none;
+ 	border-radius: 5px;
+ 	outline: none;
+ 	padding: 10px 20px;
+ 	color: white;
+ 	background-color: #337AB7;
+ }

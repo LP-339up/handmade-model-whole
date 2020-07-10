@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <input type="text" placeholder="请输入数据" name='data'>
+        </div>
+        <div>
+            <input multiple type="file" name="img">
+        </div>
+    </form>
+    <button>上传</button>
+    <img src="wx.png">
+</body>
+
+</html>
+<script src='http://cdn.bootcss.com/jquery/2.1.1/jquery.js'></script>
+<script>
+    $('button').click(function () {
+        var form=document.querySelector('form')
+        var formdata=new FormData(form)
+        $.ajax({
+                url:'http://localhost:3003/upload',
+                type:'post',
+                data:formdata,
+                //formdata 将默认发送数据类型改为表单的发送类型
+                contentType:false,
+                //将数据以序列化的方式传送
+                processData:false, 
+                success:function(res){
+                    $('img').attr('src','http://localhost:3003/'+res.data.file)
+                }
+            
+        })
+    })
+</script>

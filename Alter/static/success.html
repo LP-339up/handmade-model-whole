@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/top.css" />
+		<link rel="stylesheet" type="text/css" href="css/success.css"/>
+	</head>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Zy-public.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+
+		<!-- 顶部封装 -->
+		<div class="most">
+			<div class="top">
+				<div class="top1 clearfix">
+					<div class="t1-1">
+						<span class="yidenglu">
+							<a class="">站内消息(<span class="numb">0</span>)</a>
+							<a class="">到货通知(<span class="numb">0</span>)</a>
+							<a class="login-out">退出</a>
+							<a>|</a>
+							<a class="login hover" href="Xjw-member-center.html">我的阿尔塔</a>
+							<a>|</a>
+							<a class="hover" href="Xjw-show_order.html">查看订单</a>
+							<a>|</a>
+						</span>
+						<span class="weidenglu">
+							<a class="login hover" href="login.html">登录</a>
+							<a>|</a>
+							<a class="hover" href="register.html">注册</a>
+							<a>|</a>
+						</span>
+						
+						
+						<a class="fw hover" href="hjm-服务中心.html">服务中心</a>
+		
+					</div>
+					<div class="welcome"><span class="username"></span>您好！欢迎来到阿尔塔购物商城</div>
+				</div>
+				<div class="top2">
+					<span>
+						ALTER Shanghai Co., Ltd.
+					</span>
+					<span>
+						日本手办在中国的唯一官方网站
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- 顶部结束 -->
+		<div class="shopye">
+			<div class="wz clearfix">
+				<span>您现在的位置：</span>
+				<span>-></span>
+				<a href="Xjw-index.html">首页</a>
+				<span>-></span>
+				<a href="top.html">我的购物车</a>
+			</div>
+			<div class="xulie clearfix ">
+				<img src="image/c7.png">
+				<img src="image/a_96.png" class="fr">
+			</div>
+			<div class="kf">您好！您在购物中有任何疑问，请<a href="">联系客服</a>。</div>
+		</div>
+		
+		<!-- success:成功提交订单 -->
+		<div class="success-tj">
+			<p class="ddh">
+				<!-- span>您的</span>
+				<span>现货</span>
+				<span>订单号：</span>
+				<span class="red">46848613486</span>
+				<span>您的应付金额(含运费)为：</span>
+				<span>￥1720</span> -->
+			</p>
+			<div class="ts">
+				<span class="red">提示：下单后及时登录支付宝支付，超过48小时订单无法支付，订单取消。</span>
+			</div>
+			<div class="ts">
+				<span class="bold">请选择支付方式：</span>
+			</div>
+			<div class="zfb clearfix">
+				<div class="zfb-left fl">
+					<input type="radio" name="" id="" value="" />
+					<img src="image/c5.png" >
+				</div>
+				<div class="zfb-right fr">
+					<span>支付宝</span>
+				</div>
+			</div>
+			
+			<div class="anniu2">
+				<a href="" class="anniu2-1"></a>
+				<a class="anniu2-2"></a>
+			</div>
+		</div>
+
+	</body>
+</html>
+<script src="js/font.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/api.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Zy-public.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	function getOrder(){
+		let account = $('.username').html()
+		var index = getQueryString('index')
+		$.ajax({
+		    type:'post',
+		    url: api +'getOrder_management',
+		    data:{
+		        account,
+		    },
+		    success:function(res){
+		        if(res.status == 200){
+					html7=`
+						<span>您的</span>
+						<span>现货</span>
+						<span>订单号：</span>
+						<span class="red order">`+res.list[index].order_id+`</span>
+						<span>您的应付金额(含运费)为：</span>
+						<span>￥`+res.list[index].quantity*res.list[index].price+`</span>
+						<span class='id1'>`+res.list[index].id+`</span>
+					`
+					$('.ddh').html(html7)
+				}
+			}
+		})
+	}
+	
+	getOrder()
+	$('.success-tj').on('click','.anniu2-2',function(){
+		let account = $('.username').html()
+		var id=$('.id1').html()
+		var order_id=$('.order').html()
+		var status1=1
+		$.ajax({
+			    type:'post',
+			    url: api +'EditOrder_management',
+			    data:{
+			        account,
+					order_id,
+					id,
+					status1
+			    },
+			    success:function(res){
+			        if(res.status == 200){
+						console.log('修改成功')
+						window.location.href="pay-success.html"
+					}
+				}
+			})
+		})
+		
+	// })	
+</script>

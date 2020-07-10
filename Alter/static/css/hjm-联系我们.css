@@ -1,0 +1,32 @@
+.kongge{
+	    padding-top: 40px;
+	    padding-left: 5px
+}
+.fuwu li{
+	background: url(../img/a_52.png) no-repeat;
+	line-height: 39px;
+	padding-left: 20px;
+	cursor: pointer;
+}
+.fuwu li dl{
+	line-height: 25px;
+	padding-left: 10px;
+	margin-bottom: 0;
+	display: none;
+}
+.fuwu li dl dd{
+	padding-left: 10px;
+	background: url(../img/a_55.png) no-repeat left center;
+	
+}
+.fuwu-nav ul{
+	background-color:#f6f4f5 ;
+}
+.weizhi{
+	float: right;
+	width: 745px;
+}
+.weizhi-top{
+	border-bottom: #DADADA 1px solid;
+	line-height: 40px;
+}

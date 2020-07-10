@@ -1,0 +1,145 @@
+.jiesuan-all{
+	width: 9.77rem;
+	margin: 0 auto;
+	border: 1px solid #DFDFDF;
+}
+.jiesuan-all .xhr{
+	border-bottom: 1px solid #DFDFDF;
+	font-size: 0;
+}
+.jiesuan-all .xhr img{
+	max-width: .92rem;
+	max-height: .36rem;
+	padding-left: .15rem;
+}
+.jiesuan-all .xhr-dz{
+	font-size: 0;
+	color: #6c6c6c;
+}
+.jiesuan-all .xhr-dz .dz-left{
+	width: 1.2rem;
+	font-size: .12rem;
+}
+.jiesuan-all .xhr-dz .dz-left span{
+	margin-top: 50%;
+}
+.jiesuan-all .xhr-dz .dz-right{
+	width:8.57rem;
+	padding: .2rem 0;
+	font-size: .12rem;
+}
+.jiesuan-all .xhr-dz .dz-right .dz-all{
+	margin-bottom: .1rem;
+}
+.jiesuan-all .xhr-dz .dz-right .dz-all:last-child{
+	margin-bottom: 0;
+}
+.jiesuan-all .xhr-dz .dz-right .dz-all .chose-0{
+	vertical-align: middle;
+}
+.tr{
+	text-align: right;
+}
+
+/* 输入信息 */
+.hang{
+	height: .4rem;
+	color: #6C6C6C;
+}
+.hang .hang-left{
+	width: 1.2rem;
+	float: left;
+	font-size: .12rem;
+	height: .4rem;
+	line-height: .4rem;
+	text-align: right;
+}
+.hang .hang-left .xh{
+	color: red;
+}
+.hang .hang-right{
+	font-size: .12rem;
+	width:8.57rem;
+	float: right;
+	height: .4rem;
+	line-height: .4rem;
+}
+.hang .hang-right .shuru1{
+	height: .24rem;
+	width: 8.3333rem;
+}
+.hang .hang-right select:first-child{
+	width: 1.31rem;
+	height: .19rem;
+	vertical-align: middle;
+}
+.hang .hang-right select:last-child{
+	width: .78rem;
+	height: .19rem;
+	vertical-align: middle;
+}
+/*  */
+.hang-liuyan{
+	height: .87rem;
+	padding: .1rem 0 .2rem 0;
+	color: #6C6C6C;
+}
+.hang-liuyan .hang-liuyan-left{
+	width: 1.2rem;
+	float: left;
+	font-size: .12rem;
+	height: .87rem;
+	line-height: .87rem;
+	text-align: right;
+}
+.hang-liuyan .hang-liuyan-right{
+	font-size: .12rem;
+	width:8.57rem;
+	float: right;
+	height: .87rem;
+	line-height: .87rem;
+}
+.hang-liuyan .hang-liuyan-right textarea{
+	
+	border: 1px solid #ccc;
+	font: .12rem Arial;
+	padding: .05rem;
+}
+
+/* chose */
+.chose{
+	width: 9.79rem;
+	margin:0 auto;
+	margin-top: .1rem;
+	font-size: 0;
+	border: 1px solid #DFDFDF;
+}
+.chose .chose-1{
+	height: .37rem;
+	border-bottom: 1px solid #DFDFDF;
+}
+.chose .chose-1 img{
+	max-width: 1.09rem;
+	max-height: .36rem;
+	padding-left: .15rem;
+}
+.chose .chose-2{
+	height: .7rem;
+	line-height: .7rem;
+	padding-left: .05rem;
+	color: #6C6C6C;
+}
+.chose .chose-2 .chose9{
+	vertical-align: -.03rem;
+}
+.chose .chose-2 span{
+	font-size: .12rem;
+	margin-left: .05rem;
+}
+.chose .chose-2 img{
+	vertical-align: middle;
+	margin-left: .05rem;
+}
+.chose .chose-2 .fz{
+	margin-left: 6rem;
+}

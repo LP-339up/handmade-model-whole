@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/top.css" />
+		<link rel="stylesheet" type="text/css" href="css/jiesuan.css" />
+		<link rel="stylesheet" type="text/css" href="css/tanchuk.css"/>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Zy-public.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 顶部封装 -->
+		<div class="most">
+			<div class="top">
+				<div class="top1 clearfix">
+					<div class="t1-1">
+						<span class="yidenglu">
+							<a class="">站内消息(<span class="numb">0</span>)</a>
+							<a class="">到货通知(<span class="numb">0</span>)</a>
+							<a class="login-out">退出</a>
+							<a>|</a>
+							<a class="login hover" href="Xjw-member-center.html">我的阿尔塔</a>
+							<a>|</a>
+							<a class="hover" href="Xjw-show_order.html">查看订单</a>
+							<a>|</a>
+						</span>
+						<span class="weidenglu">
+							<a class="login hover" href="login.html">登录</a>
+							<a>|</a>
+							<a class="hover" href="register.html">注册</a>
+							<a>|</a>
+						</span>
+						
+						
+						<a class="fw hover" href="hjm-服务中心.html">服务中心</a>
+
+					</div>
+					<div class="welcome">
+						<span class="username"></span>
+						您好！欢迎来到阿尔塔购物商城
+					</div>
+				</div>
+				<div class="top2">
+					<span>
+						ALTER Shanghai Co., Ltd.
+					</span>
+					<span>
+						日本手办在中国的唯一官方网站
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- 顶部结束 -->
+
+		<div class="shopye">
+			<div class="wz clearfix">
+				<span>您现在的位置：</span>
+				<span>-></span>
+				<a href="Xjw-index.html">首页</a>
+				<span>-></span>
+				<a href="top.html">我的购物车</a>
+			</div>
+			<div class="xulie clearfix ">
+				<img src="image/c6.png">
+				<img src="image/a_96.png" class="fr">
+			</div>
+			<div class="kf">您好！您在购物中有任何疑问，请<a href="">联系客服</a>。</div>
+		</div>
+
+		<!-- 去结算 -->
+		<form class="form-horizontal" name="information">
+				<div class="html8"></div>
+				<div class="html9"></div>
+			<div class="jiesuan-all">
+				<div class="xhr">
+					<img src="image/c1.png">
+				</div>
+				<div class="xhr-dz clearfix">
+					<div class="dz-left fl">
+						<span class="tr">选择一个地址：</span>
+					</div>
+					<div class="dz-right fr">
+						<div class="dz-all region1">
+							<!-- <label class="label1">
+							<input type="radio" class="chose-0" name="dizhi" id="" value="" />
+							<span class="region1"></span>
+							</label> -->
+						</div>
+						<div class="dz-all">
+							<label class="label2">
+							<input type="radio"  class="chose-0" name="dizhi" id="" value="" />
+							<span>填写新的地址[管理]</span>
+							</label>
+						</div>
+						
+					</div>
+				</div>
+		
+				<!--输入信息  -->
+				<div class="hang clearfix">
+					<div class="hang-left"><span class="xh">*</span><span class="aaa">送货人姓名</span>：</div>
+					<div class="hang-right">
+						<input type="text" class="shuru1" name="consignee" id="shuru0" value="" />
+					</div>
+				</div>
+				<div class="hang clearfix">
+					<div class="hang-left"><span class="xh">*</span><span class="aaa">配送省份/直辖市</span>：</div>
+					<div class="hang-right">
+						<select name="region" class="input-bor form-control inline-block">
+						    <option value="0">请选择</option>
+						    <option value="内蒙古自治区">内蒙古自治区</option>
+						    <option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+						    <option value="宁夏回族自治区">宁夏回族自治区</option>
+						    <option value="西藏自治区">西藏自治区</option>
+						    <option value="广西壮族自治区">广西壮族自治区</option>
+						    <option value="陕西省">陕西省</option>
+						    <option value="青海省">青海省</option>
+						    <option value="云南省">云南省</option>
+						    <option value="海南省">海南省</option>
+						    <option value="贵州省">贵州省</option>
+						    <option value="四川省">四川省</option>
+						    <option value="甘肃省">甘肃省</option>
+						    <option value="广东省">广东省</option>
+						    <option value="湖南省">湖南省</option>
+						    <option value="湖北省">湖北省</option>
+						    <option value="河南省">河南省</option>
+						    <option value="山东省">山东省</option>
+						    <option value="江西省">江西省</option>
+						    <option value="福建省">福建省</option>
+						    <option value="安徽省">安徽省</option>
+						    <option value="浙江省">浙江省</option>
+						    <option value="江苏省">江苏省</option>
+						    <option value="黑龙江省">黑龙江省</option>
+						    <option value="吉林省">吉林省</option>
+						    <option value="辽宁省">辽宁省</option>
+						    <option value="山西省">山西省</option>
+						    <option value="河北省">河北省</option>
+						    <option value="重庆">重庆</option>
+						    <option value="上海">上海</option>
+						    <option value="天津">天津</option>
+						    <option value="北京">北京</option>
+						</select>
+					</div>
+				</div>
+				<div class="hang clearfix">
+					<div class="hang-left"><span class="xh">*</span><span class="aaa">详细地址</span>：</div>
+					<div class="hang-right">
+						<input type="text" class="shuru1" name="address" id="shuru2" value="" />
+					</div>
+				</div>
+				<div class="hang clearfix">
+					<div class="hang-left"><span class="xh">*</span><span class="aaa">邮政编码</span>：</div>
+					<div class="hang-right">
+						<input type="text" class="shuru1" name="postcode" id="shuru3" value="" />
+					</div>
+				</div>
+				<div class="hang clearfix">
+					<div class="hang-left">固定电话：</div>
+					<div class="hang-right">
+						<input type="text" class="shuru1" name="tel" id="" value="" />
+					</div>
+				</div>
+				<div class="hang clearfix">
+					<div class="hang-left"><span class="xh">*</span><span class="aaa">手机</span>：</div>
+					<div class="hang-right">
+						<input type="text" class="shuru1" name="phone" id="phone" value="" />
+					</div>
+				</div>
+				<div class="hang-liuyan clearfix">
+					<div class="hang-liuyan-left">给商家留言：</div>
+					<div class="hang-liuyan-right">
+						<textarea rows="5" cols="40" name="leave_word"></textarea>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 选择配送方式 -->
+			<div class="chose">
+				<div class="chose-1">
+					<img src="image/cn3.png">
+				</div>
+				<div class="chose-2">
+					<input type="radio" class="chose9" name="" id="" value="" />
+					<span>圆通速递(免运费)</span>
+					<span>送货范围：全国</span>
+				</div>
+			</div>
+			<!-- 选择支付方式 -->
+			<div class="chose">
+				<div class="chose-1">
+					<img src="image/cn3%20(1).png">
+				</div>
+				<div class="chose-2">
+					<input type="radio" class="chose10" name="" id="" value="" />
+					<img src="image/c5.png">
+					<span class="fz">支付宝付账</span>
+				</div>
+			</div>
+		
+			<div class="shopye">
+				<table class="tab" cellspacing="0" border="1">
+					<tr>
+						<td>商品</td>
+						<td>商品名称</td>
+						<td>单价</td>
+						<td>数量</td>
+						<td>金额小计</td>
+						<td>操作</td>
+					</tr>
+					
+					<tr>
+						<td colspan="6">
+							商品数量总计：<span class="padding-5 js"></span>件
+							商品金额总计：<span>￥</span><span class="zongjia">200</span>
+						</td>
+					</tr>
+				</table>
+		
+				<div class="anniu clearfix">
+					<div class="fr">
+						<a href="Xjw-index.html" class="a-1"></a>
+						<a class="a-2"></a>
+					</div>
+				</div>
+				
+			</div>
+		</form>
+	</body>
+</html>
+<script src="js/font.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/qujiesuan.js"></script>
+<script src="js/api.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/Zy-public.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	
+	// var api = 'http://localhost:3000/'
+	shopzj()
+	
+	// 计算商品种类总件数
+	function shopzj(){
+		var length=$('.shopye .tab .zhuijia').length
+		$('.shopye .tab tr .js').html(length)
+	}
+	
+	function getdelivery(){
+			// var account = 'weijun'
+			var account = $('.username').html()
+			var createTime=String(new Date().getTime())
+			var form=document.querySelector('form')
+			var formdata=new FormData(form);
+			formdata.append('account',account)
+			$.ajax({
+			        type:'post',
+			        url: api +'getdelivery',
+					data:formdata,
+			        processData:false,
+			        contentType:false,
+			        success:function(res){
+			            if(res.status == 209){
+						html7=`
+						<label class="label1">
+						<input type="radio" class="chose-0" name="dizhi" id="" value="" />
+						<span>`+res.list.region+`</span>
+						</label>
+						`
+						$('.region1').html(html7)
+						$('.dz-all').on('click','.label1',function(){
+							$('[name=consignee]').val(res.list.consignee)
+							$('[name=region]').val(res.list.region)
+							$('[name=address]').val(res.list.address)
+							$('[name=postcode]').val(res.list.postcode)
+							$('[name=tel]').val(res.list.tel)
+							$('[name=phone]').val(res.list.phone)
+						})
+					}
+				}
+			})
+		}
+		getdelivery()
+		
+		$('.label2').click(function(){
+		$('[name=consignee]').val('')
+		$('[name=region]').val('')
+		$('[name=address]').val('')
+		$('[name=postcode]').val('')
+		$('[name=tel]').val('')
+		$('[name=phone]').val('')
+	})
+	// 获取购物车列表
+	shoppinglist()
+	function shoppinglist() {
+		var account = $('.most .top .top1 .welcome span').html()
+		account = account + ''
+		var html = ''
+		// 发送ajax请求订单信息
+		$.ajax({
+			url: api + 'getshopping_cart',
+			type: 'post',
+			data: {
+				account
+			},
+			dataType: 'json',
+			success: function(res) {
+				if (res.status == 200) {
+					html8=res.shopping_cart.id+''
+					html9=res.shopping_cart.quantity+''
+					var summ=0
+					$.each(res.shopping_cart, function(index, item) {
+						html8=item.id+''
+						html9=item.quantity+''
+						html +=
+							`
+						<tr class="zhuijia">
+							<td>
+								<img src="${api+item.attr}" class="img" >
+							</td>
+							<td>${item.NAME}</td>
+							<td class="td1">${item.price}</td>
+							<td class="td2">${item.quantity}</td>
+							<td class="td3">`+item.price*item.quantity+`</td>
+							<td data-id="${item.id}" class="sc">删除</td>
+						</tr>
+						`
+						summ+=item.price*item.quantity
+					})
+					$('.html8').html(html8)
+					$('.html9').html(html9)
+					$('.shopye .tab tr:eq(0)').after(html)
+					shopzj()
+					// 计算商品总件数:当table标签内部变化的时候计算相关 数据
+						var zhuijia=$('.shopye .tab .zhuijia')
+						// 商品总价
+						var zzongjia=$('.zongjia')
+						zzongjia.html(summ)
+				}
+			}
+		})
+		jiesuan()
+	}
+	
+	// 点击删除事件
+	$('.shopye .tab').on('click','.sc',function(){
+		console.log(123456)
+		var id=$(this).data('id')
+		var account = $('.most .top .top1 .welcome span').html()
+		account = account + ''
+		$.ajax({
+			url:api + 'deletashopping_cart',
+			type:'post',
+			data:{
+				id,
+				account
+			},
+			dataType:'json',
+			success:function(res){
+				if(res.status==200){
+					window.location.href='qujiesuan.html'
+				}
+			}
+			
+		});
+	})
+	
+	// $('.a-2').click(function(){
+	// function addOrder_management(){
+	// 		// var account = 'weijun'
+	// 		var account = $('.username').html()
+	// 		var createTime=String(new Date().getTime())
+	// 		var form=document.querySelector('form')
+	// 		var formdata=new FormData(form);
+	// 		formdata.append('account',account)
+	// 		$.ajax({
+	// 		        type:'post',
+	// 		        url: api +'addOrder_management',
+	// 				data:formdata,
+	// 		        processData:false,
+	// 		        contentType:false,
+	// 		        success:function(res){
+	// 		            if(res.status == 209){
+	// 					window.location.href='success.html'
+	// 				}
+	// 			}
+	// 		})
+	// 	}
+	// 	}
+</script>

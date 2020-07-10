@@ -1,0 +1,267 @@
+.div-index-top{
+    padding: .08rem .30rem .14rem .05rem;
+    border-top: .01rem  solid #c5c5c5;
+    border-bottom: .01rem  solid #c5c5c5;
+}
+.hot{
+    float: left;
+    width: 5.70rem;
+    vertical-align: middle;
+}
+.hot-a1{
+    width: .34rem;
+    height: .16rem;
+    line-height: .16rem;
+    text-align: center;
+    border-radius: .03rem;
+    background-color: red;
+    color: #ffffff;
+}
+.hot-a1:hover{
+    cursor: default;
+    color: #ffffff;
+    text-decoration: none;
+}
+.hot a:hover:nth-child(2) {
+    cursor: default;
+    text-decoration: none;
+}
+.hot a:hover:nth-child(n+3){
+    cursor: pointer;
+    color: red;
+    text-decoration: none;
+}
+.search{
+    width: 2.80rem;
+    height: .23rem;
+}
+.search input::-webkit-input-placeholder{
+    color: #ca3838;
+    font-family: "Microsoft YaHei";
+}
+.search input{
+    border: #d7d7d7 .01rem solid;
+    padding-left: .10rem;
+    width: 2.21rem;
+    height: .23rem;
+    line-height: .23rem;
+    vertical-align: middle;
+    border-right: none 0;
+    float: left;
+}
+.search a{
+    width: .28rem;
+    height: .23rem;
+    text-align: center;
+    line-height: .23rem;
+    background-color: red;
+    color: #ffffff;
+}
+.pic{
+    margin-top: .10rem;
+    background: #e0e0e0;
+    padding-top: .20rem;
+    border-radius: .07rem;
+}
+.pic .pic-div2{
+    width: 9.40rem;
+    height: .42rem;
+    line-height: .42rem;
+}
+.pic-div2 :hover:first-child{
+ cursor: default;
+ color: #ffffff;
+ text-decoration: none;
+}
+.gbiao{
+    padding-right: .20rem;
+}
+.gbiao a{
+    width: .07rem;
+    height: .07rem;
+    background-color: black;
+    margin-left: .10rem;
+}
+
+/*轮播*/
+.lunbo .carousel-inner img{
+    border: 0rem;
+    width: 9.45rem;
+    height: 3.42rem;
+}
+
+/*商品展示区*/
+.goods-show{
+    margin-top: .40rem;
+}
+.show-div1{
+    width: 2.25rem;
+}
+.news{
+    background: url(../images/1b.png) repeat-y;
+}
+.news1{
+    background: url(../images/1t.png) no-repeat;
+    height: .01rem;
+    font-size: .01rem;
+}
+.news h3{
+    font-size: .14rem;
+    color: #000;
+    font-family: 微软雅黑;
+    text-align: center;
+}
+.news ul-1{
+    padding-left: .03rem;
+    padding-right: .02rem;
+}
+.ul-1 li{
+    padding-left: .13rem;
+    line-height: .30rem;
+    border-bottom: #e7e7e7 .01rem solid;
+    font-size: .12rem;
+}
+.ul-1 li span{
+    background-color: #6c6c6c;
+    width: .65rem;
+    height: .16rem;
+    display: inline-block;
+    line-height: .15rem;
+    height: .15rem;
+    color: #FFF;
+    font-size: .12rem;
+    text-align: center;
+    margin-right: .15rem;
+    border-radius: .02rem;
+    overflow: hidden;
+}
+.ul-1 li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #6c6c6c;
+    width: 1.10rem;
+    height: .23rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ul-1 li a:hover{   
+    color: red;
+    cursor: pointer;
+}
+/*热买商品*/
+.hottop{
+    width: 2.23rem;
+    margin: 0 auto;
+    /* margin-top: .10rem; */
+}
+.hottop dt{
+    font-size: .14rem;
+    color: #000;
+    font-family: 微软雅黑;
+    text-align: center;
+    font-weight: bold;
+    line-height: .40rem;
+}
+.hottop dd{
+    display: block;
+}
+.hottop dd .div1{
+    background: url(../images/2t.png) no-repeat;
+    line-height: .12rem;
+    height: .12rem;
+}
+.hottop dd .hotu1{
+    background: url(../images/2b.png) repeat-y;
+}
+.hottop dd .div2{
+    background: url(../images/2bb.png) no-repeat;
+    height: .08rem;
+
+}
+.hotu1 li{
+    padding-bottom: .05rem;
+    padding-top: .05rem;
+    border-bottom: .01rem solid #e7e7e7;
+}
+.hotu1 img{
+    border: #dfdfdf .01rem solid;
+    float: left;
+    width: .54rem;
+    height: .54rem;
+    margin-left: .10rem;
+}
+.hotu1 li div span{
+    background: #ffb630;
+    padding: .01rem .03rem;
+    font-weight: bold;
+    color: #000;
+}
+.hotu1 li div strong{
+    color: #ed1d25;
+}
+.hotu1 li div {
+    float: left;
+    width: 1.28rem;
+    margin-left: .10rem;
+    display: inline;
+    line-height: .20rem;
+}
+.hotu1 div p a:hover{
+    text-decoration: none;
+    color: #ca3838;
+    cursor: pointer;
+}
+
+/*预约商品*/
+.show-divr{
+    width: 7.40rem;
+}
+.show-divr .bigt{
+    width: .10rem;
+    height: .10rem;
+    background: #000;
+    position: relative;
+}
+.show-divr .smallt{
+    width: .05rem;
+    height: .05rem;
+    background: #ca3838;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.yuyuet a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+.yuyuet .alter:hover{
+    color: #ca3838;
+} 
+.yuyuet .word1{
+   width: 2.00rem;
+   border-bottom: .01rem solid #000;
+}
+.show-divr .list{
+    margin-top: .03rem;
+}
+.show-divr .list .lists{
+    padding-bottom: .05rem;
+    margin-left: .15rem;
+    margin-top: .20rem;
+}
+.show-divr .list li:nth-child(4n+1){
+   margin-left: 0;
+}
+.show-divr .lists img{
+    width: 1.66rem;
+    height: 1.66rem;
+    padding-bottom: .02rem;
+}
+.show-divr .lists .center a:hover{
+    text-decoration: none;
+    color: #ca3838;
+    cursor: pointer;
+}
+.mt{
+	margin-top: .5rem;
+}

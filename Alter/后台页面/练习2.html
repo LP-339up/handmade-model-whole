@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/demo2.css" />
+	</head>
+	<body>
+		<div class="vp-head">
+			<div class="vp-head-right">
+				<a class="gwc">购物车</a>
+				<span class="vp-head-1">
+					<a>登录</a>
+					<a>|</a>
+					<a>注册</a>
+					</sapn>
+			</div>
+			<div class="vp-head-left">
+				<a>品牌</a>
+				<a>Funtouch OS</a>
+				<a>体验店</a>
+				<a>政府业务</a>
+				<a>社区</a>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="nav nav-big">
+				<span class="shop pull-left">vivo</span>
+				<span class="pull-right search glyphicon glyphicon-search"></span>
+				<ul class="nav-lists">
+					<li><a>IQOO</a></li>
+					<li><a>NEX</a></li>
+					<li><a>X</a></li>
+					<li><a>S</a></li>
+					<li><a>Z</a></li>
+					<li><a>Y</a></li>
+					<li><a>U</a></li>
+					<li><a>真无线耳机</a></li>
+					<li><a>商城</a></li>
+					<li><a>服务</a></li>
+				</ul>
+			</div>
+			<div class="nav nav-small nav-min">
+				<span class="pull-left navbar-toggle">
+					<span class="icon-bar icon-prev"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar icon-next"></span>
+				</span>
+				<span class="cart glyphicon glyphicon-lock pull-right"></span>
+				<span class="shop">vivo</span>
+			</div>
+			<!-- 弹出顶部导航 -->
+			<div class="nav-pop nav nav-small">
+				<div class="top">
+					<span class="pull-left navbar-toggle">
+						<span class="icon-bar icon-prev "></span>
+						<span class="icon-bar icon-next "></span>
+					</span>
+					<span class="cart glyphicon glyphicon-lock pull-right"></span>
+					<div class="top-search">
+						<input type="text" placeholder="iQOO" class="search-input" />
+						<span class="glyphicon glyphicon-search icon-search"></span>
+					</div>
+				</div>
+				<div class="nav-pop-scroll">
+					<ul class="nav-pop-lists">
+						<li class="text-left nav-pop-list">
+							<div>服务区<span class="pull-right icon-list">+</span></div>
+							<div class="list-item">
+							<div >hfgkjaghkg</div>
+							<div >hfgkjaghkg</div>
+							<div>hfgkjaghkg</div>
+							<div>hfgkjaghkg</div>
+							<div>hfgkjaghkg</div>
+							<div>hfgkjaghkg</div>
+							<div>hfgkjaghkg</div>
+							<div>hfgkjaghkg</div>
+							</div>
+						</li>
+						<li class="text-left">
+							<div>服务区<span class="pull-right icon-list">+</span></div>
+						</li>
+						<li class="text-left">
+							<div>服务区<span class="pull-right icon-list">+</span></div>
+						</li>
+						<li class="text-left">
+							<div>服务区<span class="pull-right icon-list">+</span></div>
+						</li>
+						<li class="text-left">
+							<div>服务区<span class="pull-right icon-list">+</span></div>
+						</li>
+						<li class="text-left">
+							<div>服务区<span class="pull-right icon-list">+</span></div>
+						</li>
+						<li class="text-left">
+							<div>服务区<span class="pull-right icon-list">+</span></div>
+						</li>
+						<li class="text-left">
+							<div>服务区<span class="pull-right icon-list">+</span></div>
+						</li>
+						<li class="text-left">
+							<div>服务区<span class="pull-right icon-list">+</span></div>
+						</li>
+						<li class="text-left">
+							<div>服务区<span class="pull-right icon-list">+</span></div>
+						</li>
+						<li class="text-left">
+							<div>服务区<span class="pull-right icon-list">+</span></div>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$('.search-input').focus(function() {
+		$(this).next('.icon-search').hide();
+		$(this).addClass('focus')
+	})
+
+	$('.nav-min .navbar-toggle').click(function() {
+		$('.icon-prev').addClass('rotate')
+		$('.icon-next').addClass('rotate-reverse')
+		$('.nav-pop').fadeIn(500,function(){
+		$('.nav-pop-scroll').delay(200).slideDown(500)
+			
+		})
+	})
+
+	$('.nav-pop .nav-toggle').click(function() {
+		$('.icon-prev').removeClass('rotate')
+		$('.icon-next').removeClass('rotate-reverse')
+		$('.nav-pop').fadeOut(500,function(){
+		$('.nav-pop-scroll').hide()
+		})
+	})
+	$('.nav-pop-list').click(function(){
+		$(this).find('.list-item').slideToggle()
+	})
+</script>

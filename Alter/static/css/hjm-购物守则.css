@@ -1,0 +1,18 @@
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.shouze .titls{
+	border-bottom: #dadada 1px solid;
+	line-height: 40px;
+}
+.shouze .hongzi{
+	font-family: 微软雅黑;
+	color: rgb(255, 0, 0);
+	font-size:16px ;
+	line-height: 15px;
+	margin-top:20px;
+	margin-bottom:20px;
+} 

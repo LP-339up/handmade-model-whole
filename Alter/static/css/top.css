@@ -1,0 +1,197 @@
+
+/* 顶部 */
+*{
+	margin: 0;
+	padding: 0;
+}
+.most{
+	width: 100%;
+	border-bottom:0.02rem solid #dadada ;
+	background: url(../image/d3.png) right top no-repeat;
+}
+.top{
+	margin: 0 auto;
+	width: 9.79rem;
+}
+
+.top1{
+	background: url(../image/a_10.png) right top no-repeat;
+}
+.top2{
+	font-size: 0;
+	height: .49rem;
+	line-height: .49rem;
+}
+
+.top1 .t1-1{
+	height: .28rem;
+	line-height: .28rem;
+	float: right;
+	font-size: 0;
+}
+.top1 .welcome{
+	font-size: .12rem;
+	float: right;
+	height: .28rem;
+	line-height: .28rem;
+	margin-right:1.4rem;
+}
+.top1 .t1-1 .aa{
+	font-size: .12rem;
+	text-decoration: none;
+	color: #6c6c6c;
+	margin-right: .03rem;
+}
+.top1 .t1-1 .aa:hover{
+	color: red;
+}
+.top1 .t1-1 span{
+	font-size: .12rem;
+	margin: 0 .08rem;
+	color: #6c6c6c;
+}
+.top1 .t1-1 .aa .numb{
+	font-size: .12rem;
+	color: red;
+	margin: 0;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.top2 span:nth-child(1){
+	font-size: .16rem;
+	color: #aa8f5c;
+	font-family: "微软雅黑";
+	margin: 0 0 0 .05rem;
+	font-weight: 600;
+}
+.top2 span:nth-child(2){
+	font-size: .15rem;
+	color: #808080;
+	font-family: "微软雅黑";
+	font-weight: 600;
+}
+/* 顶部结束 */
+
+/* shopye */
+.shopye{
+	width: 9.79rem;
+	margin: 0 auto;
+	margin-top: .2rem;
+	margin-bottom: .3rem;
+}
+.shopye .wz{
+	font-size: 0;
+	margin-bottom: .2rem;
+}
+.shopye .wz span{
+	font-size: .12rem;
+	margin-left: .05rem;
+	color: #6c6c6c;
+}
+.shopye .wz a{
+	font-size: .12rem;
+	text-decoration: none;
+	color: #6c6c6c;
+	margin-left: .05rem;
+}
+.shopye .xulie{
+	width: 100%;
+	height: .3rem;
+	font-size: 0;
+}
+.fr{
+	float: right;
+}
+.fl{
+	float: left;
+}
+.shopye .kf{
+	width: 100%;
+	height: .15rem;
+	margin-top: .45rem;
+	margin-bottom: .2rem;
+	font-size: .12rem;
+	color: #6c6c6c;
+	line-height: 100%;
+}
+.shopye .kf a{
+	color: red;
+	text-decoration: none;
+}
+
+.tab{
+	width: 100%;
+	font-size: .12rem;
+	border-top:1px solid #dfdfdf;
+	border-right:1px solid #dfdfdf;
+	text-align: center;
+}
+.tab tr:nth-child(1){
+	line-height: .55rem;
+}
+.tab tr:last-child{
+	line-height: .57rem;
+	text-align: right;
+}
+.padding-5{
+	padding: 0 .05rem;
+}
+.tab tr:last-child span{
+	color: red;
+}
+.tab .zhuijia td{
+	padding: .1rem 0;
+}
+.tab .img{
+	max-width: .54rem;
+	max-height: .54rem;
+	background-color: red;
+}
+.tab tr td{
+	border-bottom:1px solid #dfdfdf;
+	border-left:1px solid #dfdfdf;
+}
+.tab .zhuijia .input{
+	width: .34rem;
+	height: .19rem;
+	padding: .01rem 0;
+}
+
+.tab .zhuijia input[type=number]::-webkit-inner-spin-button,  
+.tab .zhuijia input[type=number]::-webkit-outer-spin-button {  
+    -webkit-appearance: none;  
+}
+
+.shopye .anniu{
+	margin-top: .2rem;
+	width: 100%;
+	height: .33rem;
+	font-size: 0;
+}
+.shopye .anniu a{
+	text-decoration: none;
+	color: #6c6c6c;
+	display: inline-block;
+	margin-left: .15rem;
+}
+.shopye .anniu .a-0{
+	width: 1.07rem;
+	height: .3rem;
+	background: url(../image/a_99.png) center center no-repeat;
+}
+.shopye .anniu .a-1{
+	width: .95rem;
+	height: .3rem;
+	background: url(../image/a_100.png) center center no-repeat;
+}
+.shopye .anniu .a-2{
+	width: .9rem;
+	height: .3rem;
+	background: url(../image/a_98.png) center center no-repeat;
+}
+.a-2{
+	cursor: pointer;
+}

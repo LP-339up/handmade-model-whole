@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>所有订单-会员中心-ALTER ONLINE SHOP——阿尔塔在线</title>
+</head>
+<link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+<link href="CSS/Xjw-reset.css" rel="stylesheet">
+<link href="CSS/Xjw-public.css" rel="stylesheet">
+<link href="CSS/Xjw-member-center.css" rel="stylesheet">
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/Zy-public.js" type="text/javascript" charset="utf-8"></script>
+<body>
+    <div class="member-head">
+        <div class="head-r">
+            <div class="width-979">
+                <div class="head-r-head1">
+                    <a> <span class="username"></span> <span class="span1 pointer">你好！欢迎来到阿尔法在线购物商城</span></a>
+                    <span class="yidenglu">
+                    	<a class="">站内消息(<span class="numb">0</span>)</a>
+                    	<a class="">到货通知(<span class="numb">0</span>)</a>
+                    	<a class="login-out">退出</a>
+                    </span>
+                    <span class="weidenglu">
+                    	<a class="login hover" href="login.html">登录</a>
+                    	<a>|</a>
+                    	<a class="hover" href="register.html">注册</a>
+                    	<a>|</a>
+                    </span>
+                    <a href="Xjw-member-center.html" class="fenge"> 我的阿尔法</a>
+                    <a href="Xjw-show_order.html" class="fenge"> 查看订单</a>
+                    <a href="hjm-服务中心.html"><span class="glyphicon glyphicon-heart"></span> 服务中心</a>
+                    <span><img class="tshu none weibo pointer middle" src="images/weibo.png"></span>
+                </div>
+            </div>
+        </div>
+        <div class="width-979">
+            <div class="head1 clearfix">
+                <a><img class="tshu none png-a07 pointer" src="images/a_07.png"></a>
+                <a class="pointer" href="Xjw-index.html">
+                    <span class="span-1">ALTER Shanghai Co., Ltd.</span>
+                    <span class="span-2">日本手办公司在中国的唯一官方网店</span>
+                </a>
+                <img class="tshu none weixin" src="images/weixin.png" >
+                <img class="tshu none wbqr"  src="images/wbqr.png" >
+            </div>
+        </div>
+        <!--修改/添加收货地址导航栏-->
+        <div class="tshu nav none">
+            <div class="wrap22">
+              <div class="wrap2"></div>
+            </div>
+            <div class="navcon">
+              <ul>
+                <li><a class="pointer" href=""><img src="images/a_14.png" /></a></li>
+                <li><a class="pointer" href="">新闻资讯</a></li>
+                <li><a class="pointer" href="">预约商品</a></li>
+                <li><a class="pointer" href="">现货商品</a></li>
+                <li><a class="pointer" href="">购物守则</a></li>
+              </ul>
+              <div class="gz">
+              <a href="" class="cart clr-white"><span class="glyphicon glyphicon-shopping-cart clr-white margin-r-5"></span>购物车（0）</a>
+              <a href="" class=" clr-white">去结算</a>
+              </div>
+            </div>
+        </div>
+    </div>
+	
+    <div class="member-body">
+        <div class="width-979 clearfix">
+            <p class="mem-t padding-t-20 padding-b-30">您现在的位置：<a href="Xjw-index.html">首页</a> -> <a href="Xjw-member-center.html">会员中心</a> -> <sapn>所有订单</sapn></p>
+            <div class="mem-divl fl">
+                <!--订单管理-->
+                <div class="ddgl padding-5 bold clr-black border-t border-l border-r">订单管理</div>
+                <ul class="list border-b border-l border-r">
+                    <li class="lists padding-5-tb"><a class="a_1">所有订单</a></li>
+                    <li class="lists padding-5-tb"><a class="a_2">未支付订单</a></li>
+                    <li class="lists padding-5-tb"><a class="a_3">已支付订单</a></li>
+                    <li class="lists padding-5-tb"><a class="a_4">已发货订单</a></li>
+                </ul>
+                <!--个人信息-->
+                <div class="ddgl margin-t-15 padding-5 bold clr-black border-t border-l border-r">个人信息</div>
+                <ul class="list border-b border-l border-r">
+                    <li class="lists padding-5-tb"><a href="Xjw-member-center.html" class="a_5">修改个人信息</a></li>
+                    <li class="lists padding-5-tb"><a href="Xjw-member-center.html" class="a_6">修改/添加收货地址</a></li>
+                    <li class="lists padding-5-tb"><a href="Xjw-member-center.html" class="a_7">修改密码</a></li>
+                </ul>
+            </div>
+            <div class="mem-divr fr">
+                <!--订单管理板块-->
+                <div class="dindan-module grxx ">
+                    <p class="border padding-t-10"><span class="mem-r-tsty">订单管理</span></p>
+                	<div class="status1"></div>
+                    <div class="grxx-cont padding-lr-15 padding-tb-20 border-b border-l border-r">
+                        <p class="grxx-tit border-b">
+                            <a class="a4 a-95 inline-block bold clr-white "><span class="a_1 pointer">所有订单</span></a>
+                            <a class="a5 a-97 inline-block bold clr-white"><span class="a_2 pointer">未支付订单</span></a>
+                            <a class="a6 a-97 inline-block bold clr-white "><span class="a_3 pointer">已支付订单</span></a>
+                            <a class="a7 a-97 inline-block bold clr-white "><span class="a_4 pointer">已发货订单</span></a>
+                        </p>
+                        
+                        <dl>
+                            <!--所有订单-->
+                            <ul class="ul-4 margin-t-15">
+                                <table class="table table-bordered margin-t-15 center dingdan">
+                                    <tr class="bold "><td>订单号</td><td>订单商品金额</td><td>运费</td><td>定金</td><td>下单时间</td><td>支付方式</td><td>状态</td><td>订单类型</td><td>详情</td></tr>
+                            		<tbody class="dingdan12">
+                            		<!-- <tr class="dingdan"><td>123456789</td><td>￥740.00</td><td>￥0.00</td><td>￥----</td><td>2020-04-11 14：51</td><td>在线支付</td><td class="ord-status">渲染订单状态</td><td>现货订单</td><td class="cakan-1 clr-ff66 pointer">查看</td></tr> -->
+                            		</tbody>
+                            	</table>
+                                <nav aria-label="Page navigation " class="center ">
+                                    <ul class="pagination">
+                                        <li><a>首页</a></li>
+                                        <li>
+                                            <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">上一页</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">1</a></li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">下一页</span>
+                                            </a>
+                                        </li>
+                                        <li><a>末页</a></li>
+                                    </ul>
+                                  </nav>
+                            </ul>
+                            <!--未支付订单-->
+                            <ul class="ul-5 margin-t-15 none">
+                               
+                            </ul>
+                            <!--已支付订单-->
+                            <ul class="ul-6 margin-t-15 none">
+                                
+                            </ul>
+                            <!--已发货订单-->
+                            <ul class="ul-7">
+
+                            </ul>
+                            <!--详情展开-->
+                            <div class="detail1">
+                                <!-- <h5 class="padding-10 border clr-black bold">订单编号637225403463050143 状态：<span class="ord-det-status">未支付</span></h5>
+                                <ul class="margin-t-5 border-l border-r border-b">
+                                    <p class="t1 padding-tb-5 padding-lr-10 font-14 clr-black bold">订单信息</p>
+                                    <div class="detail-cont padding-lr-10">
+                                        <div class="padding-tb-20 border-b">
+                                            <p class="margin-b-10 font-14 clr-black bold">收货人信息</p>
+                                            <ul>
+                                                <li class="margin-b-10"> 收 货 人：<span>用户名</span></li>
+                                                <li class="margin-b-10"> 收货地址：<span>用户填写地址</span></li>
+                                                <li class="margin-b-10"> 联系电话：<span>用户填写电话</span></li>
+                                                <li class="margin-b-10"> 手    机：<span>用户手机</span></li>
+                                                <li class="margin-b-10"> 邮    编：<span>用户填写邮编</span></li>
+                                                <li class="margin-b-10"> 给商家的留言：<span>用户填写的留言</span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="padding-tb-20 border-b">
+                                            <p class="margin-b-10 font-14 clr-black bold">支付方式及配送</p>
+                                            <ul>
+                                                <li class="margin-b-10"> 支付方式：<span>获取方式</span></li>
+                                                <li class="margin-b-10"> 运    费：<span>0.00</span></li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <div class="goods-list padding-tb-20">
+                                            <p class="margin-b-10 font-14 clr-black bold">商品清单</p>
+                                            <ul class="border">
+                                                <table class="center table">
+                                                    <tr class="bg-ecec"><td>商品</td><td>商品名称</td><td>单价</td><td>数量</td><td>金额小计</td><td>操作</td></tr>
+                                                    <tr><td><img src="images/141153122061.jpg"></td><td>商品名称</td><td>单价</td><td>数量</td><td>金额小计</td><td></td></tr>
+                                                </table>
+                                            </ul>
+                                        </div>
+                                        <div class="padding-10 bg-ecec">
+                                            <p class="margin-b-10 font-14 clr-black bold">结算信息</p>
+                                            <ul class="">
+                                                <li class="margin-b-10"> 商品金额：<span>863.00</span>元 支付金额：<span>863</span>元 运费：<span>0.00</span>元</li>
+                                                <li class="pay-2 none margin-b-10"><a class="pay-1 font-14 bold pointer">点击支付</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </ul> -->
+                            </div>
+							
+                        </dl>
+                    </div>
+                </div>
+                <!--个人信息板块-->
+                <div class="grxx-module grxx none">
+                    <p class="border padding-t-10"><span class="mem-r-tsty">个人信息</span></p>
+                    <div class="grxx-cont padding-lr-15 padding-tb-20 border-b border-l border-r">
+                        <p class="grxx-tit border-b">
+                            <a class="a1 a-95 inline-block bold clr-white "><span class="a_5 pointer">修改个人信息</span></a>
+                            <a class="a2 a-97 inline-block bold clr-white"><span class="a_6 pointer">修改/添加送货地址</span></a>
+                            <a class="a3 a-97 inline-block bold clr-white "><span class="a_7 pointer">修改密码</span></a>
+                        </p>
+                        
+                        <dl>
+                            <!--修改个人信息-->
+                            <ul class="ul-1 margin-t-15">
+                                <div class="shuo-min margin-t-20 padding-tb-5 padding-l-5">完善您的个人信息，有助于我们为您提供更加个性化的服务，我们将尊重并保护您的隐私。</div>
+                                <li class="margin-tb-15">登录账户：用户名</li>
+                                <li class="margin-tb-15">真实姓名：<input class="input-bor form-control inline-block" type="text"></li>
+                                <li class="margin-tb-15">收件邮箱：用户邮箱</li>
+                                <li class="margin-tb-15">详细地址：<input class="width-08 form-control inline-block" type="text"></li>
+                                <li class="margin-tb-15">邮政编码：<input class="input-bor form-control inline-block" type="text"></li>
+                                <li class="margin-tb-15">手机号码：<input class="input-bor form-control inline-block" type="text"></li>
+                                <li class="margin-tb-15">Q Q号码：<input class="input-bor form-control inline-block" type="text"></li>
+                                <li class="baocun inline-block bold clr-white font-20 center pointer">保 存</li>
+                            </ul>
+                            <!--修改/添加送货地址-->
+                            <ul class="ul-2 margin-t-15 none">
+                                <li class="margin-tb-15"><span class="clr-ed1d">*</span>收 货 人：<input class="input-bor form-control inline-block" type="text"></li>
+                                <li class="margin-tb-15">
+                                    <span class="clr-ed1d">*</span>
+                                    所在地区：<select class="input-bor form-control inline-block">
+                                        <option value="0">请选择</option>
+                                        <option value="内蒙古自治区">内蒙古自治区</option>
+                                        <option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+                                        <option value="宁夏回族自治区">宁夏回族自治区</option>
+                                        <option value="西藏自治区">西藏自治区</option>
+                                        <option value="广西壮族自治区">广西壮族自治区</option>
+                                        <option value="陕西省">陕西省</option>
+                                        <option value="青海省">青海省</option>
+                                        <option value="云南省">云南省</option>
+                                        <option value="海南省">海南省</option>
+                                        <option value="贵州省">贵州省</option>
+                                        <option value="四川省">四川省</option>
+                                        <option value="甘肃省">甘肃省</option>
+                                        <option value="广东省">广东省</option>
+                                        <option value="湖南省">湖南省</option>
+                                        <option value="湖北省">湖北省</option>
+                                        <option value="河南省">河南省</option>
+                                        <option value="山东省">山东省</option>
+                                        <option value="江西省">江西省</option>
+                                        <option value="福建省">福建省</option>
+                                        <option value="安徽省">安徽省</option>
+                                        <option value="浙江省">浙江省</option>
+                                        <option value="江苏省">江苏省</option>
+                                        <option value="黑龙江省">黑龙江省</option>
+                                        <option value="吉林省">吉林省</option>
+                                        <option value="辽宁省">辽宁省</option>
+                                        <option value="山西省">山西省</option>
+                                        <option value="河北省">河北省</option>
+                                        <option value="重庆">重庆</option>
+                                        <option value="上海">上海</option>
+                                        <option value="天津">天津</option>
+                                        <option value="北京">北京</option>
+                                    </select>
+                                </li>
+                                <li class="margin-tb-15"><span class="clr-ed1d">*</span>街道地址：<input class="width-08 form-control inline-block" type="text"></li>
+                                <li class="margin-tb-15"><span class="clr-ed1d">*</span>
+                                    手机号码：<input name="number" class="input-bor form-control inline-block" type="text" >
+                                    固定电话：<input name="tel" class="input-bor form-control inline-block" type="text" >
+                                </li>
+                                <li class="margin-tb-15"><span class="clr-ed1d">*</span>邮政编码：<input class="input-bor form-control inline-block" type="text"></li>
+                                <li class="margin-tb-15">
+                                    默 认：
+                                    <select class="input-bor inline-block form-control">
+                                        <option value="yes">是</option>
+                                        <option value="no">否</option>
+                                    </select>
+                                </li>
+                                <li class="baocun inline-block bold clr-white font-20 center pointer">保 存</li>
+                                <table class="table table-bordered margin-t-15 center">
+                                    <tr class="bg-ecec"><td>收货人</td><td>详细地址</td><td>手机/电话</td><td>默认地址</td><td>操作</td></tr>
+                                    <tr><td>用户名</td><td>用户地址</td><td>用户手机/电话</td><td>否</td><td><a class="pointer">编辑</a> <a class="pointer">删除</a></td></tr>
+                                </table>
+                            </ul>
+                            <!--修改密码-->
+                            <ul class="ul-3 margin-t-15 none">
+                                <li class="margin-tb-15">原始密码：<input class="input-bor form-control inline-block" type="text"></li>
+                                <li class="margin-tb-15">新 密 码：<input class="input-bor form-control inline-block" type="text"></li>
+                                <li class="margin-tb-15">确认密码：<input class="input-bor form-control inline-block" type="text"></li>
+                                <li class="baocun inline-block bold clr-white font-20 center pointer">保 存</li>
+                            </ul>
+                        </dl>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="JS/Xjw-member-center.js"></script>
+<script src="js/api.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/Zy-public.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	getOrder_management()
+	//获取订单列表
+	$('.a_1').click(function(){
+		getOrder_management()
+		console.log(123456)
+		
+	})
+	function getOrder_management(){
+		let account = $('.username').html()
+		// let account = 'weijun'
+		$.ajax({
+		    type:'post',
+		    url: api +'getOrder_management',
+		    data:{
+		        account,
+		    },
+		    success:function(res){
+		        if(res.status == 200){
+					var html4=''
+					$('.dingdan1').html('')
+					var html5=''
+					$('.detail').html(html5)
+		            $.each(res.list,function(index,item){
+		            		 html4+=`
+		            				<tr class='dingdan1'>
+										<td>${item.order_id}</td>
+										<td>￥${item.price}</td>
+										<td>￥${item.freight}</td>
+										<td>￥0</td>
+										<td>${item.time}</td>
+										<td>在线支付</td>
+										<td class="ord-status">${item.status1==0?'未付款':'已付款'}</td>
+										<td>现货订单</td>
+										<td class="cakan-1 clr-ff66 pointer" data-index=`+index+`>查看</td>
+									</tr>
+		            			`
+							html5+=`
+							<div class="detail none" >
+							    <h5 class="padding-10 border clr-black bold">订单编号${item.order_id} 状态：<span class="ord-det-status">${item.status1==0?'未付款':'已付款'}</span></h5>
+							    <ul class="margin-t-5 border-l border-r border-b">
+							        <p class="t1 padding-tb-5 padding-lr-10 font-14 clr-black bold">订单信息</p>
+							        <div class="detail-cont padding-lr-10">
+							            <div class="padding-tb-20 border-b">
+							                <p class="margin-b-10 font-14 clr-black bold">收货人信息</p>
+							                <ul>
+							                    <li class="margin-b-10"> 收 货 人：<span>${item.consignee}</span></li>
+							                    <li class="margin-b-10"> 收货地址：<span>${item.address}</span></li>
+							                    <li class="margin-b-10"> 联系电话：<span>${item.tel}</span></li>
+							                    <li class="margin-b-10"> 手    机：<span>${item.phone}</span></li>
+							                    <li class="margin-b-10"> 邮    编：<span>${item.postcode}</span></li>
+							                    <li class="margin-b-10"> 给商家的留言：<span>${item.leave_word}</span></li>
+							                </ul>
+							            </div>
+							            <div class="padding-tb-20 border-b">
+							                <p class="margin-b-10 font-14 clr-black bold">支付方式及配送</p>
+							                <ul>
+							                    <li class="margin-b-10"> 支付方式：<span>支付宝</span></li>
+							                    <li class="margin-b-10"> 运    费：<span>${item.freight}</span></li>
+							                    
+							                </ul>
+							            </div>
+							            <div class="goods-list padding-tb-20">
+							                <p class="margin-b-10 font-14 clr-black bold">商品清单</p>
+							                <ul class="border">
+							                    <table class="center table">
+							                        <tr class="bg-ecec"><td>商品</td><td>商品名称</td><td>单价</td><td>数量</td><td>金额小计</td></tr>
+							                        <tr><td><img src="${api+item.attr}"></td><td>${item.NAME}</td><td>${item.price}</td><td>${item.quantity}</td><td>`+item.price*item.quantity+`</td></tr>
+							                    </table>
+							                </ul>
+							            </div>
+							            <div class="padding-10 bg-ecec">
+							                <p class="margin-b-10 font-14 clr-black bold">结算信息</p>
+							                <ul class="">
+							                    <li class="margin-b-10"> 商品金额：<span>`+item.price*item.quantity+`</span>元 支付金额：<span>`+(item.price*item.quantity+item.freight)+`</span>元 运费：<span>${item.freight}</span>元</li>
+												<li class="pay-2 margin-b-10"><a href='success.html?index=`+index+`' class="pay-1 font-14 bold pointer">${item.status1==0?'点击支付':''}</a></li>
+											</ul>
+							            </div>
+							        </div>
+							    </ul>
+								</div>	
+							`
+		            	})
+					$('.dingdan12').html(html4)
+					$('.detail1').html(html5)
+		    }
+			}
+		})
+	}
+	function getOrder_management1(){
+		let account = $('.username').html()
+		// let account = 'weijun'
+		let status1 =$('.status1').html()
+		$.ajax({
+		    type:'post',
+		    url: api +'getOrder_management1',
+		    data:{
+		        account,
+				status1
+		    },
+		    success:function(res){
+		        if(res.status == 200){
+					var html4=''
+					$('.dingdan1').html('')
+					var html5=''
+					$('.detail').html(html5)
+		            $.each(res.list,function(index,item){
+		            		html4+=`
+		            				<tr class='dingdan1'>
+										<td>${item.order_id}</td>
+										<td>￥${item.price}</td>
+										<td>￥${item.freight}</td>
+										<td>￥0</td>
+										<td>${item.time}</td>
+										<td>在线支付</td>
+										<td class="ord-status">${item.status1==0?'未付款':'已付款'}</td>
+										<td>现货订单</td>
+										<td class="cakan-1 clr-ff66 pointer" data-index=`+index+`>查看</td>
+									</tr>
+		            			`
+							html5+=`
+							<div class="detail none">
+							    <h5 class="padding-10 border clr-black bold">订单编号${item.order_id} 状态：<span class="ord-det-status">${item.status1==0?'未付款':'已付款'}</span></h5>
+							    <ul class="margin-t-5 border-l border-r border-b">
+							        <p class="t1 padding-tb-5 padding-lr-10 font-14 clr-black bold">订单信息</p>
+							        <div class="detail-cont padding-lr-10">
+							            <div class="padding-tb-20 border-b">
+							                <p class="margin-b-10 font-14 clr-black bold">收货人信息</p>
+							                <ul>
+							                    <li class="margin-b-10"> 收 货 人：<span>${item.consignee}</span></li>
+							                    <li class="margin-b-10"> 收货地址：<span>${item.address}</span></li>
+							                    <li class="margin-b-10"> 联系电话：<span>${item.tel}</span></li>
+							                    <li class="margin-b-10"> 手    机：<span>${item.phone}</span></li>
+							                    <li class="margin-b-10"> 邮    编：<span>${item.postcode}</span></li>
+							                    <li class="margin-b-10"> 给商家的留言：<span>${item.leave_word}</span></li>
+							                </ul>
+							            </div>
+							            <div class="padding-tb-20 border-b">
+							                <p class="margin-b-10 font-14 clr-black bold">支付方式及配送</p>
+							                <ul>
+							                    <li class="margin-b-10"> 支付方式：<span>支付宝</span></li>
+							                    <li class="margin-b-10"> 运    费：<span>${item.freight}</span></li>
+							                    
+							                </ul>
+							            </div>
+							            <div class="goods-list padding-tb-20">
+							                <p class="margin-b-10 font-14 clr-black bold">商品清单</p>
+							                <ul class="border">
+							                    <table class="center table">
+							                        <tr class="bg-ecec"><td>商品</td><td>商品名称</td><td>单价</td><td>数量</td><td>金额小计</td></tr>
+							                        <tr><td><img src="${api+item.attr}"></td><td>${item.NAME}</td><td>${item.price}</td><td>${item.quantity}</td><td>`+item.price*item.quantity+`</td></tr>
+							                    </table>
+							                </ul>
+							            </div>
+							            <div class="padding-10 bg-ecec">
+							                <p class="margin-b-10 font-14 clr-black bold">结算信息</p>
+							                <ul class="">
+							                    <li class="margin-b-10"> 商品金额：<span>`+item.price*item.quantity+`</span>元 支付金额：<span>`+(item.price*item.quantity+item.freight)+`</span>元 运费：<span>${item.freight}</span>元</li>
+												<li class="pay-2 margin-b-10"><a class="pay-1 font-14 bold pointer">${item.status1==0?'点击支付':''}</a></li>
+											</ul>
+							            </div>
+							        </div>
+							    </ul>
+							</div>
+							`
+		            	})
+					$('.dingdan12').html(html4)
+					$('.detail1').html(html5)
+					
+		    }
+			}
+		})
+	}
+	//获取未支付订单列表
+	$('.a_2').click(function(){
+		var status1=$('.status1').html(0)
+		$('.dingdan1').html('')
+		getOrder_management1()
+	})
+	
+	//获取已支付订单列表
+	$('.a_3').click(function(){
+		var status1=$('.status1').html(1)
+		$('.dingdan1').html('')
+		getOrder_management1()
+	})
+</script>
+</html>

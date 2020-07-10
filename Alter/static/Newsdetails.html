@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新闻资讯-ALTER ONLINE SHOP——阿尔塔在线</title>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+</head>
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/Zy-public.js" type="text/javascript" charset="utf-8"></script>
+<body>
+ 
+<div class="header">
+<a name="top"></a>
+  <div class="wraph" style="position:relative;">
+    <div class="header1">
+	 <a class="" ><span class="username"></span>你好！欢迎来到阿尔塔在线购物商城</a>
+	 <span class="yidenglu">
+	 	<a class="">站内消息(<span class="numb">0</span>)</a>
+	 	<a class="">到货通知(<span class="numb">0</span>)</a>
+	 	<a class="login-out">退出</a>
+	 	<a>|</a>
+	 	<a class="login hover" href="Xjw-member-center.html">我的阿尔塔</a>
+	 	<a>|</a>
+	 	<a class="hover" href="Xjw-show_order.html">查看订单</a>
+	 	<a>|</a>
+	 </span>
+	 <span class="weidenglu">
+	 	<a class="login hover" href="login.html">登录</a>
+	 	<a>|</a>
+	 	<a class="hover" href="register.html">注册</a>
+	 	<a>|</a>
+	 </span>
+	 
+	 
+	 <a class="fw hover" href="hjm-服务中心.html">服务中心</a>
+	 <a class="wb hover" href="">
+	 <img style="width: 24px;" src="images/Weibo.png" >
+	 </a>
+	 
+	 
+	 </div>
+    <div class="header2">
+     <div class="logo">
+	<a href="Xjw-index.html"><img src="picture/a_07.png" /></a> <img src="picture/a_08.png" style=" display:none;" /> <span class="span_1">ALTER Shanghai Co., Ltd.</span> <span class="span_2">日本手办公司ALTER在中国的唯一官方网店</span> <img src="picture/a_08.png"  style=" display:none;"/></div>
+
+    </div>
+      <img style="position:absolute;top:28px;right:80px;" src="picture/weixin.png" width="71" height="71"/>
+      <img style="position:absolute;top:28px;right:0px;" src="picture/wbqr.png" width="71" height="71"/>
+  </div>
+  <div class="nav">
+    <div class="wrap22">
+      <div class="wrap2"></div>
+    </div>
+    <div class="navcon">
+      <ul>
+        <li><a href="Xjw-index.html"><img src="picture/a_14.png" /></a></li>
+        <li><a href="news.html"><img src="picture/a_16.png" /></a></li>
+        <li><a href="Booking.html"><img src="picture/a_17.png" /></a></li>
+        <li><a href="nowgoods.html"><img src="picture/a_18.png" /></a></li>
+        <li><a href="hjm-购物守则.html"><img src="picture/a_13.png" /></a></li>
+      </ul>
+      <div class="gz">
+      <a href="top.html" class="cart">购物车（0）</a>
+      <a href="qujiesuan.html">去结算</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="keyword clearfix">
+  <div class="hot">
+    <img src="picture/a_22.png" />
+   关键词：<a >alter</a>&nbsp;<a >almecha</a> <a >altair</a>
+    
+    </div>
+    <div class="search">
+    <input type="text" id="keyword" onfocus="javascript:if(this.value=='请输入关键字')this.value=''" onblur="javascript:if(this.value=='')this.value='请输入关键字'"  value="请输入关键字" style="color:#C11312" />
+    <img src="picture/a_23.png" onclick="search()" style="cursor:pointer" />
+    </div>
+    </div>
+    <script type="text/javascript">
+        function search() {
+            var goodsname = document.getElementById("keyword").value;
+            if (goodsname == "请输入关键字" || goodsname == "") {
+                // alert("请输入关键字");
+            }
+            else{
+                window.location = "/manage.ashx?xmls=cn/goodssearch.html&keyword=" + escape(goodsname);
+            }
+        }
+    </script>
+  <div class="pic2">
+  
+  </div>
+  <div class="things2 clearfix">
+   <div class="ths2_1">
+      <dl class="sidenav">
+        <dt><img src="picture/a_62.png" /></dt>
+        <dd>
+          <ul class="sideul">
+              <li><a href="news.html">公司新闻</a></li>
+          </ul>
+        </dd>
+      </dl>
+     
+      
+   
+    </div>
+   <div class="ths2_2">
+      <div class="navtop clearfix">
+        <div class="fL">公司新闻</div>
+        <div class="fR">您现在的位置：<a href="/manage.ashx?xmls=cn/index.html">首页</a>〉<a href="/manage.ashx?xmls=cn/news.html">新闻资讯</a>〉公司新闻</div>
+      </div>
+      <div class="con">
+      
+      <ul class="listnews">
+        <!--新闻假数据-->
+      </ul>
+<div class="page"><a>首页</a>
+<a>上一页</a>
+<a style="color:#DD0C46">1</a>
+<a>下一页</a><a >末页</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="f1">
+    <div class="f1_1">
+      <ul class="fotul">
+        <li class="li2"><dl><dt>购物说明</dt><dd><a href="/manage.ashx?xmls=cn/help.html&contentid=20">预约流程</a></dd><dd><a href="/manage.ashx?xmls=cn/help.html&contentid=21">现货流程</a></dd><dd><a href="/manage.ashx?xmls=cn/help.html&contentid=2">地址变更申请流程</a></dd></dl></li><li class="li3"><dl><dt>如何付款</dt><dd><a href="/manage.ashx?xmls=cn/help.html&contentid=4">支付方式</a></dd></dl></li><li class="li4"><dl><dt>配送方式</dt><dd><a href="/manage.ashx?xmls=cn/help.html&contentid=7">配送服务介绍</a></dd><dd><a href="/manage.ashx?xmls=cn/help.html&contentid=9">配送签收注意事项</a></dd></dl></li><li class="li5"><dl><dt>售后服务</dt><dd><a href="/manage.ashx?xmls=cn/help.html&contentid=11">售后服务规则</a></dd><dd><a href="/manage.ashx?xmls=cn/help.html&contentid=12">发票制度说明</a></dd></dl></li><li class="li6"><dl><dt>帮助中心</dt><dd><a href="/manage.ashx?xmls=cn/help.html&contentid=19">使用协议</a></dd><dd><a href="/manage.ashx?xmls=cn/help.html&contentid=17">如何注册</a></dd><dd><a href="/manage.ashx?xmls=cn/help.html&contentid=18">忘记密码</a></dd></dl></li>
+      </ul>
+      
+    
+      
+    </div>
+  </div>
+  <div class="botnav">
+    <ul>
+      <li><a href="Xjw-index.html">首页</a></li>
+      <li class="li7">|</li>
+      <li><a href="hjm-联系我们.html">联系我们</a></li>
+      <li class="li7">|</li>
+      <li><a href="hjm-版权声明.html">版权声明</a></li>
+      <li class="li7">|</li>
+      <li><a href="hjm-隐私条款.html">隐私条款</a></li>
+      <li class="li7">|</li>
+      <li><a href="hjm-关于我们.html">关于我们</a></li>
+	
+	</ul>
+    
+    
+
+    
+    
+     </div>
+  <p class="pp">
+  <div style="text-align: center">
+	Copyright &copy; 2012 阿尔塔（上海）贸易有限公司 All rights reserved</div>
+<p style="text-align: center">
+	<a href="http://www.beian.miit.gov.cn/" target="_blank">沪ICP备11019099号</a></p>
+<div style="display:none;">
+	<!-- <script language="javascript" type="text/javascript" src="js/15189566.js"></script>
+	<noscript><a href="http://www.51.la/?15189566" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="picture/15189566.asp" style="border:none" /></a></noscript></div>
+ -->
+
+    </p>
+</div>
+<div class="tops"><a href="#top"><img src="picture/tio.png" /></a></div>
+
+<!-- Live800在线客服图标:咨询[浮动分组列表型] 开始-->
+ 
+   <div id="kefuone" onmouseover="document.getElementById('kefu').style.display='block'">在线客服</div>
+   <div id="kefu">
+    
+ <div class="diaubox">
+ <!-- <script language="javascript" src="js/staticbutton.js"></script> -->
+ <!-- <script language="javascript" src="js/staticbutton.js"></script> -->
+
+     <div class="work">
+         工作时间：<br />
+周一~周五：10:00-20:30<br />
+周六：10:00-17:00<br />
+(周日及法定节假日除外)
+
+
+     </div>
+
+ </div>
+</div>
+<script type="text/javascript">
+    var adTimer;
+    $("#kefu").hover(function () {
+        clearInterval(adTimer);
+    }, function () { settimeout(); }
+    	                )
+    function settimeout() {
+        adTimer = setInterval(function () {
+            $("#kefu").hide();
+        }, 500);
+    }
+</script>
+
+<script src="js/api.js"></script>
+<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/Zy-public.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	
+//渲染现货商品商品
+   getDetailJournalism()
+
+//请求现货商品
+function getDetailJournalism(){
+	var id = getQueryString('id')
+    $.ajax({
+        url: api+'getDetailJournalism',
+        type: 'post',
+		data: {
+		    id
+		},
+        dataType: 'json',
+        success: function(res){
+			var journalism=res.journalism
+            if(res.status == 200){
+				console.log(journalism.content)
+				        journalism.content = journalism.content.replace(/\r\n/g, '<br/>'); //IE9、FF、chrome
+				        journalism.content = journalism.content.replace(/\s/g, ' '); //空格处理
+						console.log(journalism.content)
+                var html = ''
+                    html += `
+                          <table width="100%" border="0" class="table3">
+                              <tr>
+                                <td>
+                                <dl class="dl_2">
+                                    <dt>`+journalism.title+`</dt>
+                                    <dd>来源： 发布时间：`+journalism.createTime+`</dd>
+                                  </dl>
+                                  </td>
+                              </tr>
+                            </table>
+                            <table width="100%" border="0" class="table3">
+                              <tr>
+                                <td>
+                                <div style="margin: 0px; padding: 0px; color: rgb(108, 108, 108); font-family: Simsun; line-height: 25px;">
+								`+journalism.content+`</div>
+                    <p style="margin: 0px; padding: 0px; color: rgb(108, 108, 108); font-family: Simsun; line-height: 25px; text-align: right;">
+                    	`+journalism.author+`</p>
+                    
+                                </td>
+                              </tr>
+                            </table>
+                    `
+                //将获取的数据显示到页面
+                $('.con').html(html)
+            }else if(res.status == 500){
+                console.log('数据库连接出错')
+            }
+        }
+    })        
+}
+</script>
+<style type="text/css" >
+ #kefuone{width:125px;position:fixed;right:0;left:auto;top:250px;z-index:111;background-color:#ffffff; padding-top:10px; padding-bottom:10px; padding-left:7px; width:17px; padding-right:5px; font-size:14px;font-family: "微软雅黑"; font-weight:bold; color:#333; font-weight:bold; border-left:solid 1px #cccccc;border-top:solid 1px #cccccc;border-bottom:solid 1px #cccccc;}
+
+#kefu{width:160px; padding-top:5px; border-radius:5px; overflow:hidden; position:fixed;right:0;left:auto;top:220px;z-index:1111;background-color:#2E335D
+;display:none;font-size:12px; min-height:150px; }
+#kefu_6{background:url(about:blank) repeat-x top;background-color:#325E7F;width:125px;top:300px;position:absolute;right:auto;left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));}
+.diaubox{background:#fff;margin:0 3px 3px;padding:3px 0 3px 2px; font-size:12px; border-radius:3px; overflow:hidden;margin-bottom:5px; }
+.diaubox a{display:block;padding-top:5px;height:24px;text-decoration:none; color:#000000;margin-left:-7px; }
+#kefu h3,#kefu_6 h3{color: #FFFFFF;margin: 6px auto;}
+.order_sel{margin-bottom:12px;}
+.work{line-height:20px; padding-left:7px; font-family:"微软雅黑"; font-size:12px; color:#333; background-color:#fff; text-align:left; padding-top:10px; padding-bottom:10px;  }
+
+</style>
+
+<!-- Live800在线客服图标:咨询[浮动分组列表型] 结束-->
+
+
+</body>
+</html>

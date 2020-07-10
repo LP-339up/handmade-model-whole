@@ -1,0 +1,258 @@
+.width-979{
+    width: 9.79rem;
+    margin: 0 auto;
+}
+.clearfix{
+    clear: both;
+    content: '';
+    display: block;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/*pading margin*/
+.padding-5{
+    padding: .05rem;
+}
+.padding-5-tb{
+    padding-bottom: .05rem;
+    padding-top: .05rem;
+}
+.padding-r-5{
+    padding-right: .05rem;
+}
+.padding-l-5{
+    padding-left: .05rem;
+}
+.padding-tb-5{
+    padding-bottom: .05rem;
+    padding-top: .05rem;
+}
+.padding-b-10{
+    padding-bottom: .10rem;
+}
+.padding-b-20{
+    padding-bottom: .20rem;
+}
+.padding-b-30{
+    padding-bottom: .30rem;
+}
+.padding-10{
+    padding: .10rem;
+}
+.padding-t-10{
+    padding-top: .10rem;
+}
+.padding-tb-10{
+    padding-bottom: .10rem;
+    padding-top: .10rem;
+}
+.padding-lr-10{
+    padding-left: .10rem;
+    padding-right: .10rem;
+}
+.padding-t-20{
+    padding-top: .20rem;
+}
+.padding-tb-20{
+    padding-top: .20rem;
+    padding-bottom: .20rem;
+}
+.padding-lr-15{
+    padding-left: .15rem;
+    padding-right: .15rem;
+}
+.margin-t-5{
+    margin-top: .05rem;
+}
+.margin-r-5{
+    margin-right: .05rem;
+}
+.margin-b-10{
+    margin-bottom: .10rem;
+}
+.margin-t-15{
+    margin-top: .15rem;
+}
+.margin-tb-15{
+    margin-top: .15rem;
+    margin-bottom: .15rem;
+}
+.margin-t-20{
+    margin-top: .20rem;
+}
+.margin-t-30{
+    margin-top: .30rem;
+}
+.margin-r-40{
+    margin-right: .40rem;
+}
+.margin-l-40{
+    margin-left: .40rem;
+}
+/*display*/
+.block{
+    display: block;
+}
+.inline{
+    display: inline;
+}
+.none{
+    display: none;
+}
+.inline-block{
+    display: inline-block;
+}
+/*font-size*/
+.font-12{
+    font-size: .12rem;
+}
+.font-14{
+    font-size: .14rem;
+}
+.font-16{
+    font-size: .16rem;
+}
+.font-18{
+    font-size: .18rem;
+}
+.font-20{
+    font-size: .20rem;
+}
+
+/*对齐方式*/
+.center{
+    text-align: center;
+}
+.middle{
+    vertical-align: middle;
+}
+
+/*font-color*/
+.clr-6c6c{
+    color: #6c6c6c;
+}
+.clr-ca38{
+    color: #ca3838;
+}
+.clr-white{
+    color: #ffffff;
+}
+.clr-black{
+    color: #000000;
+}
+.clr-d6d6{
+    color:#d6d6d6;
+}
+.clr-ed1d{
+    color: #ED1D25;
+}
+.clr-ff66{
+    color: #ff6600;
+}
+/*背景颜色*/
+.bg-ecec{
+    background-color: #ececec;
+}
+/*字体系列*/
+.YaHei{
+    font-family: "Microsoft YaHei";
+}
+.bold{
+    font-weight: bold;
+}
+.Arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*光标变化*/
+.pointer{
+    cursor: pointer;
+}
+
+
+/*border*/
+.border-b-solid{
+    border-bottom: .01rem solid #dcdcdc;
+}
+.border-t-solid{
+    border-top: .01rem solid #dcdcdc;
+}
+.border{
+    border: .01rem solid #dfdfdf;
+}
+.border-t{
+    border-top: .01rem solid #dcdcdc;
+}
+.border-b{
+    border-bottom: .01rem solid #dcdcdc;
+}
+.border-l{
+    border-left: .01rem solid #dcdcdc;
+}
+.border-r{
+    border-right: .01rem solid #dcdcdc;
+}
+.input-bor{
+    border: #d7d7d7 .01rem solid;
+    width: 2.42rem;
+}
+
+/*input长度*/
+.width-08{
+    width: 80%;
+}
+.point.yincang{
+ 	 display: block;
+ 	 position: absolute;
+ 	 left: 50%;
+ 	 top: 50%;
+  }
+.point {
+	display: none;
+ }
+ 
+ .point .pop {
+ 	width: 500px;
+ 	height: 200px;
+ 	position: absolute;
+ 	left: -250px;
+ 	top: -100px;
+ 	border: 1px solid red;
+ 	color: dimgrey;
+	background-color: white;
+ }
+
+ .padding-10 {
+ 	padding: 20px;
+ }
+
+ .gbtb {
+ 	position: absolute;
+ 	top: 10px;
+ 	right: 10px;
+ }
+
+ .point .pop .top-title,
+ .mid-content {
+ 	border-bottom: 1px dotted #ccc;
+ }
+
+ .point .pop .bottom-btn {
+ 	content: '';
+ 	display: block;
+ 	clear: both;
+
+ }
+
+ .point .pop .bottom-btn .queren {
+ 	float: right;
+ 	border: none;
+ 	border-radius: 5px;
+ 	outline: none;
+ 	padding: 10px 20px;
+ 	color: white;
+ 	background-color: #337AB7;
+ }

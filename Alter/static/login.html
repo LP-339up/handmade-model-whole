@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录-ALTER ONLINE SHOP——阿尔塔在线</title>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link href="css/tipswindown.css" rel="stylesheet" type="text/css" />
+<script src="js/Zy-public.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+ 
+<div class="h">
+  <div class="h1"> 
+  <a href="Xjw-index.html"><img src="picture/login_03.png" /></a>
+  </div>
+</div>
+<div class="c">
+  <div class="c1">
+    <table width="100%" border="0" cellspacing="0">
+      <tr>
+        
+        <td align="center" valign="middle"><div class="loginhtml">
+            <div class="lsdd"></div>
+            <div class="logint">
+            	<!-- <form action="/manage.ashx?xmls=lib/login.xmls&method=login" method="post" name="form1" id="form1" onsubmit="return login(this)"> -->
+              <table width="100%" border="0">
+                <tr>
+                  <td class="td2" align="right">用户名：</td>
+                  <td><input class="input1" name="username" value="" type="text" /></td>
+                </tr>
+                <tr>
+                  <td align="right" class="td2">密  码：</td>
+                  <td><input class="input1" name="password" type="password" /></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td><input  class="check" name="check"  type="checkbox" />
+                    记住用户名 <a href="password.html">忘记密码？</a>
+                    </td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>
+                  <div style="float:left;">
+                  <input type="hidden" name="from" value="" />
+                  <input type="hidden" name="Url" value=""/>
+                  <input class="s1" value="" type="button" />
+                  </div>
+                  <div style="float:left; margin-left:20px;">
+                  <a href="register.html"><img src="picture/reg.png" /></a>
+                  </div>
+                  </td>
+                </tr>
+              </table>
+              <!-- </form> -->
+              
+            </div>
+            <div class="ll1"></div>
+          </div></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="f">
+  <div class="f2">
+    <ul>
+      
+        <li><a href="/manage.ashx?xmls=cn/index.html">首页</a></li>
+      <li class="li7">|</li>
+      <li><a href="/manage.ashx?xmls=cn/contactUs.html">联系我们</a></li>
+      <li class="li7">|</li><li><a href="/manage.ashx?xmls=cn/other.html&contentid=83">版权声明</a></li>
+	  <li class="li7">|</li><li><a href="/manage.ashx?xmls=cn/other.html&contentid=82">隐私条款</a></li>
+	  <li class="li7">|</li><li><a href="/manage.ashx?xmls=cn/other.html&contentid=81">关于我们</a></li>
+      
+      
+    </ul>
+    <P> 
+     Copyright  © 2012  阿尔塔（上海）贸易有限公司      All rights reserved        沪ICP备65983256
+    </P>
+  </div>
+</div>
+<div class="point">
+		    <div class="pop">
+				<div class="top-title padding-10">
+					<span>提示</span><span>:</span>
+					<span class="gbtb">X</span>
+				</div>
+				<div class="mid-content padding-10">
+					
+				</div>
+				<div class="bottom-btn padding-10">
+					<button type="button" class="queren">确认</button>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
+<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.js" type="text/javascript"></script>
+<script src="js/tipswindown2.js" type="text/javascript"></script>
+	<script src="js/md5.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+
+// 验证登陆
+
+var token = window.localStorage.getItem('token')
+if(token){
+    window.location.href = 'Xjw-index.html' //引号内填登陆成功后的页面
+}
+if(!token){
+	  
+	  $('.weidenglu').css('display','block')
+	  $('.yidenglu').css('display','none')
+  }else{
+	  $('.weidenglu').css('display','none')
+	  $('.yidenglu').css('display','block')
+  }
+
+
+$('.s1').click(function(){
+
+var account = $('[name=username]').val()
+var password = $('[name=password]').val()
+
+if (account =='') {
+    tanchukuang3("用户名不能为空!");
+    return false;
+};
+
+if (password =='') {
+    tanchukuang3("密码不能为空!");
+    return false;
+};
+
+	let md5ps=md5(md5(md5(password)))
+
+ //ajax(同步)---start     
+         
+	console.log(md5ps)
+  $.ajax({
+          type: 'post',
+          url: 'http://localhost:3000/login',
+          data: {
+            account,
+            password:md5ps
+          },
+          
+   success: function(res) {
+                
+
+                if(res.status == 200)
+                {
+                    
+                  window.localStorage.setItem('token',res.data.token)
+                  window.localStorage.setItem('info',JSON.stringify(res.data.info))
+                  window.location.href = 'Xjw-index.html'   //引号内填登陆成功的跳转页面
+
+                }
+                else if(res.status == 505)
+                {
+                    tanchukuang3("密码错误，请重新输入!");
+        return false;
+                } 
+                else if(res.status == 504)
+                {
+                    tanchukuang3("用户名错误，请重新输入!");
+        return false;
+                }
+                else{
+                    tanchukuang3('系统错误')
+                    return false;
+                      }
+                
+            }
+         })
+         //ajax--end   
+
+
+
+})
+
+
+
+
+
+</script>

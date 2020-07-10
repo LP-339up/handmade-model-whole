@@ -1,0 +1,305 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册</title>
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/Zy-public.js" type="text/javascript" charset="utf-8"></script>
+
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+
+<style type="text/css">
+    .style1{
+            font-size: 14px;
+            height: 42px;
+        }
+        .style2
+        {
+            height: 42px;
+        }
+</style>
+</head>
+<body>
+ 
+<div class="h">
+  <div class="h1"> 
+  <a href="/manage.ashx?xmls=cn/index.html"><img src="picture/login_03.png" /></a>
+  </div>
+</div>
+<div  class="c">
+  <div class="c1">
+    <div class="relist">
+      <div class="ret"></div>
+      <div class="rebb">
+      <form action="/manage.ashx?xmls=lib/register.xmls&method=register" method="post" name="form1" id="form1" onsubmit="return checkform(this)">
+        <table width="100%" border="0">
+          <tr>
+            <td align="right" class="td2" style="width:110px;">用户名：</td>
+            <td>
+            <input class="input1" name="UserName" type="text" onblur="checkuser(this.value)" />
+            <span id="UserName"  style="color:#6C6C6C">请输入您的用户名</span></td>
+            
+          </tr>
+          <tr>
+            <td align="right"  class="td2">密码：</td>
+            <td><input class="input1" id="pwd" name="Password" type="password"onblur="checkpwd(this.value)" />
+            <span id="Password" class="test" style="color:#6C6C6C">请输入密码</span>
+            </td>
+          </tr>
+          <tr>
+            <td align="right"  class="style1">确认密码：</td>
+            <td class="style2">
+            <input  class="input1" name="rePassword" onblur="checkqpwd(this.value)" type="password"  />
+            <span id="QPwd" class="test" style="color:#6C6C6C"> 请输入确认密码</span>
+            </td>
+          </tr>
+          <tr>
+            <td align="right"  class="td2">Email：</td>
+            <td><input  class="input1" name="Mail" type="text" onblur="checkemail(this.value)"/>
+              <span id="Mail" class="test" style="color:#6C6C6C">请输入邮箱</span>
+              </td>
+          </tr>
+          <tr>
+            <td align="right"  class="td2">验证码：</td>
+            <td>
+               <input  type="text" name="identify"  class="input2"/>
+               <img class="vm" src="picture/manage.ashx"  id="code"/>
+               <a href="javascript:changeCode()">看不清？换一张</a>
+            </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td><input type="checkbox" name="check" class="vm"/>
+              我已阅读并且同意<a href="/manage.ashx?xmls=cn/protocal.html" style=" color:#0000CC;">《阿尔塔在线使用协议》</a></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td><input type="button" class="s2 register-submit" value="" />
+              <input class="r1" value="" type="button" /></td>
+          </tr>
+        </table>
+      </form>
+      </div>
+      <div class="reb"></div>
+    </div>
+  </div>
+</div>
+<div class="f">
+  <div class="f2">
+    <ul>
+      
+        <li><a href="/manage.ashx?xmls=cn/index.html">首页</a></li>
+      <li class="li7">|</li>
+      <li><a href="/manage.ashx?xmls=cn/contactUs.html">联系我们</a></li>
+      <li class="li7">|</li><li><a href="/manage.ashx?xmls=cn/other.html&contentid=83">版权声明</a></li><li class="li7">|</li><li><a href="/manage.ashx?xmls=cn/other.html&contentid=82">隐私条款</a></li><li class="li7">|</li><li><a href="/manage.ashx?xmls=cn/other.html&contentid=81">关于我们</a></li>
+      
+      
+    </ul>
+    <P> 
+     Copyright  © 2012  阿尔塔（上海）贸易有限公司      All rights reserved        沪ICP备65983256
+    </P>
+  </div>
+</div>
+<div class="point">
+		    <div class="pop">
+				<div class="top-title padding-10">
+					<span>提示</span><span>:</span>
+					<span class="gbtb">X</span>
+				</div>
+				<div class="mid-content padding-10">
+					
+				</div>
+				<div class="bottom-btn padding-10">
+					<button type="button" class="queren">确认</button>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
+<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.js" type="text/javascript"></script>
+<script src="js/check.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+  function changeCode() {
+      document.getElementById("code").src = "/manage.ashx" + "?xmls=apps/center/identify.xmls&temp=" + RndNum(4);
+  }
+  function RndNum(n) {
+      var rnd = "";
+      for (var i = 0; i < n; i++)
+          rnd += Math.floor(Math.random() * 10);
+      return rnd;
+  }
+</script>
+<script type="text/javascript">
+  function checkuser(value) {
+      $("#UserName").css("color","#FF0000");
+      if (value.length == 0) {
+          $("#UserName").text("用户名不能为空!");
+          return false;
+      }
+      else {
+         
+          if (value.length < 6) {
+              $("#UserName").text("长度不得小于6位!");
+              return false;
+          }
+          else if (!value.match(/^([a-zA-Z0-9_]){6,12}$/)) {
+          $("#UserName").text("用户名只能由大小写英文字母、数字、下划线组成的长度6-12个字节");
+          return false;
+          }
+          else {
+              $("#UserName").html("<img src='picture/yes.png'/>");
+          }
+      }
+  }
+  
+ 
+
+  var pwd = "";
+
+  function checkpwd(password) {
+      var patrn = /^[a-zA-Z0-9]{6,16}$/;
+      $("#Password").css("color","#FF0000");
+      if (password.length == 0) {
+         $("#Password").html("密码不能为空!");
+         return false;
+      }
+      else {
+          if (!patrn.exec(password)) {
+               $("#Password").html("密码只能由数字、字母组成,长度为6-16位!");
+              return false;
+          }
+          else {
+               $("#Password").html("<img src='picture/yes.png'/>");
+          }
+
+
+      }
+
+  }
+
+  function checkqpwd(qpwd) {
+      $("#QPwd").css("color", "#FF0000");
+      if (qpwd.length == 0) {
+          $("#QPwd").html("确认密码不能为空!");
+          return false;
+      }
+      else {
+          if (qpwd != document.getElementById("pwd").value) {
+              $("#QPwd").html("两次输入密码不一致!");
+              return false;
+          }
+          else {
+              $("#QPwd").html("");
+              
+          }
+      }
+  }
+
+  function pwdlength(len) {
+      for (i = 1; i <= 3; i++) {
+          document.getElementById("q" + i).style.backgroundColor = "";
+          document.getElementById("q" + i).style.color = "";
+      }
+      if (len != 0) {
+          document.getElementById("q" + len).style.backgroundColor = "#FF0000";
+          document.getElementById("q" + len).style.color = "#FFF";
+      }
+  }
+
+
+
+  function checkemail(email) {
+      var reg = new RegExp("^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$");
+      if (email.length == 0) {
+         $("#Mail").html("邮箱不能为空!");
+          $("#Mail").css("color","#FF0000");
+          return false;
+      }
+      else {
+          if (!reg.test(email)) {
+             $("#Mail").html("邮箱格式不正确!");
+             $("#Mail").css("color", "#FF0000");
+             return false;
+          }
+          else {
+              $("#Mail").html("<img src='picture/yes.png'/>");
+          }
+      }
+  }
+
+  function checkform(obj) {
+      if (checkuser(obj.UserName.value) == false) {
+              return false;
+          }
+          if (checkpwd(obj.Password.value) == false) {
+              return false;
+          }
+          if (checkqpwd(obj.rePassword.value) == false) {
+              return false;
+          }
+
+          if (checkemail(obj.Mail.value) == false) {
+          return false;
+      }
+      if (obj.identify.value == "") {
+          tanchukuang3("验证码不能为空!");
+          return false;
+      }
+      if (obj.check.checked == false) {
+          tanchukuang3("您没有阅读用户协议!");
+          return false;
+      }
+  }
+
+</script>
+<script>
+
+
+$('.register-submit').click(function(){
+    var account = $('[name=UserName]').val()
+    var password = $('[name=Password]').val()
+    var Email = $('[name=Mail]').val()
+
+    $.ajax({
+
+      
+        type:'post',
+        url:'http://localhost:3000/register',
+        data:{
+            account,
+            password,
+            Email
+        },
+       
+
+        //注册成功，跳转到登录页面
+        success: function (res) {
+                // 登陆成功 保存登陆信息 然后跳转到首页
+                // 保存到token 以及登录信息保存到localStorage
+
+
+                if(res.status == 201){
+                   
+                  tanchukuang3("注册成功!");
+    
+                    window.location.href = 'login.html'   //引号内填登陆成功的跳转页面
+
+                }else if(res.status == 508){
+                  tanchukuang3("用户名已存在！");
+                  return false;
+                }
+            }
+        
+
+
+
+    })
+
+
+})
+
+
+</script>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<style type="text/css">
+			.box{
+				width: 100%;
+				background: red;
+			}
+			.box-list{
+				width: 25%;
+				height: 50px;
+				border:1px solid #000000;
+				float: left;
+			}
+			/* 媒体查找 */
+			@media (max-width:1200px) {
+				.box-list{
+					width: 33.33%;
+				}
+			}
+			@media (max-width:980px) and(min-width:768px){
+				.box-list{
+					width: 50%;
+				}
+			}
+			@media (max-width:760px){
+				.box-list{
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box row">
+			<div class="box-list"></div>
+			<div class="box-list"></div>
+			<div class="box-list"></div>
+			<div class="box-list"></div>
+		</div>
+		<div class="row">
+		  <div class="col-md-1">.col-md-1</div>
+		  <div class="col-md-1">.col-md-1</div>
+		  <div class="col-md-1">.col-md-1</div>
+		  <div class="col-md-1">.col-md-1</div>
+		  <div class="col-md-1">.col-md-1</div>
+		  <div class="col-md-1">.col-md-1</div>
+		  <div class="col-md-1">.col-md-1</div>
+		  <div class="col-md-1">.col-md-1</div>
+		  <div class="col-md-1">.col-md-1</div>
+		  <div class="col-md-1">.col-md-1</div>
+		  <div class="col-md-1">.col-md-1</div>
+		  <div class="col-md-1">.col-md-1</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
